@@ -17,6 +17,9 @@ const Home: React.FC = () => {
         <li>
             <a href="/removeDups">Problem 4: Remove Duplicates</a>
         </li>
+        <li>
+            <a href="/kthToLast">Problem 5: Kth to Last</a>
+        </li>
       </ol>
     </div>
   );
