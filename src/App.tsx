@@ -5,6 +5,7 @@ import Home from './Pages/home';
 import IsUnique from './Pages/isUnique';
 import CheckPermutation from './Pages/checkPermutation';
 import PalindromePermutation from './Pages/palindromePermutation';
+import RemoveDups from './Pages/removeDups'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/isUnique" element={<IsUnique />} />
         <Route path="/checkPermutation" element={<CheckPermutation />} />
         <Route path="/palindromePermutation" element={<PalindromePermutation />} />
+        <Route path="/removeDups" element={<RemoveDups />} />
       </Routes>
     </>
   );

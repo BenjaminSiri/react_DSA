@@ -14,6 +14,9 @@ const Home: React.FC = () => {
         <li>
             <a href="/palindromePermutation">Problem 3: Palindrome Permutation</a>
         </li>
+        <li>
+            <a href="/removeDups">Problem 4: Remove Duplicates</a>
+        </li>
       </ol>
     </div>
   );

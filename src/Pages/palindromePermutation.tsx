@@ -29,19 +29,19 @@ const PalindromePermutation: React.FC = () => {
         let oddCount:number = 0;
 
         charCount.forEach((value:number, key:string) => {
-            if(value % 2 == 1){
+            if(value % 2 === 1){
                 oddCount++;
             }
         })
 
         switch(oddCount){
             case (0):
-                if(str.length % 2 == 0){
+                if(str.length % 2 === 0){
                     return true;
                 }
                 return false;
             case (1):
-                if(str.length % 2 == 1){
+                if(str.length % 2 === 1){
                     return true;
                 }
                 return false;
