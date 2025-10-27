@@ -11,6 +11,7 @@ interface Node {
 const RemoveDups: React.FC = () => {
   const [nodes, setNodes] = useState<Node[]>([]);
   const [nodesString, setNodesString] = useState<string>('');
+  const [time, setTime] = useState<number>(0);
 
   useEffect(() => {
     printList();
@@ -62,7 +63,10 @@ const RemoveDups: React.FC = () => {
   }
 
   function handleButtonClick() {
+    const startTime = performance.now();
     removeDuplicates(nodes[0])
+    const endTime = performance.now();
+    setTime(endTime-startTime);
     printList();
   }
 
@@ -123,6 +127,8 @@ const RemoveDups: React.FC = () => {
         </Button>
 
         <p>{nodesString}</p>
+
+        <p>Function took: {time?.toFixed(2) } miliseconds</p>
       
     </div>
   );
