@@ -8,6 +8,12 @@ const Home: React.FC = () => {
         <li>
           <a href="/isUnique">Problem 1: Is Unique</a>
         </li>
+        <li>
+            <a href="/checkPermutation">Problem 2: Check Permutation</a>
+        </li>
+        <li>
+            <a href="/palindromePermutation">Problem 3: Palindrome Permutation</a>
+        </li>
       </ol>
     </div>
   );

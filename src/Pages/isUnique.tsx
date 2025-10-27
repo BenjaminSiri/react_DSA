@@ -50,6 +50,7 @@ const Problem1: React.FC = () => {
 
   return (
     <div>
+      <a href="/">back</a>
       <h1>Problem 1: isUnique</h1>
       
       <TextField
