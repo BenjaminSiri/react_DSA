@@ -28,13 +28,13 @@ const RemoveDups: React.FC = () => {
     });
   }
 
-  function handleEditNode(id: string, value: string) {
+  function handleEditValue(id: string, value: string) {
     setNodes(prev =>
       prev.map(n => (n.id === id ? { ...n, value } : n))
     );
   }
 
-  function handleEditNext(id: string | null, nextId: string | null){
+  function handleEditNext(id: string, nextId: string | null){
     setNodes(prev =>
         prev.map(n => (n.id === id ? { ...n, nextId } : n))
     );
@@ -106,7 +106,7 @@ const RemoveDups: React.FC = () => {
             <React.Fragment key={node.id}>
                 <TextField
                     value={node.value}
-                    onChange={(e) => handleEditNode(node.id, e.target.value)}
+                    onChange={(e) => handleEditValue(node.id, e.target.value)}
                     size="small"
                 />
                 {i < nodes.length - 1 && <span>→</span>}
