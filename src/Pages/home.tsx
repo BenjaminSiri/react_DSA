@@ -18,7 +18,7 @@ const Home: React.FC = () => {
             <a href="/removeDups">Problem 4: Remove Duplicates</a>
         </li>
         <li>
-            <a href="/kthToLast">Problem 5: Kth to Last</a>
+            <a href="/lambdaAPI">GET request with AWS Lambda </a>
         </li>
       </ol>
     </div>

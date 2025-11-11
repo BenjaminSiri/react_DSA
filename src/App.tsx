@@ -6,7 +6,7 @@ import IsUnique from './Pages/isUnique';
 import CheckPermutation from './Pages/checkPermutation';
 import PalindromePermutation from './Pages/palindromePermutation';
 import RemoveDups from './Pages/removeDups'
-import KthToLast from './Pages/kthToLast';
+import LambdaAPI from './Pages/lambdaAPI';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Route path="/checkPermutation" element={<CheckPermutation />} />
         <Route path="/palindromePermutation" element={<PalindromePermutation />} />
         <Route path="/removeDups" element={<RemoveDups />} />
-        <Route path="/kthToLast" element={<KthToLast />} />
+        <Route path="/lambdaAPI" element={<LambdaAPI />} />
       </Routes>
     </>
   );
