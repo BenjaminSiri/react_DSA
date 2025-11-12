@@ -7,6 +7,7 @@ import CheckPermutation from './Pages/checkPermutation';
 import PalindromePermutation from './Pages/palindromePermutation';
 import RemoveDups from './Pages/removeDups'
 import LambdaAPI from './Pages/lambdaAPI';
+import MTGSearch from './Pages/mtgSearch';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="/palindromePermutation" element={<PalindromePermutation />} />
         <Route path="/removeDups" element={<RemoveDups />} />
         <Route path="/lambdaAPI" element={<LambdaAPI />} />
+        <Route path="/mtgSearch" element={<MTGSearch />} />
       </Routes>
     </>
   );
